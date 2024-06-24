@@ -1,0 +1,148 @@
+body {
+  font-family: "Arial", serif; /* Set the font family for the body */
+  background: linear-gradient(
+    to right,
+    #6a11cb,
+    #2575fc
+  ); /* Set a gradient background */
+  color: white; /* Set the text color to white */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.app-container {
+  text-align: center; /* Center-align text */
+  padding: 20px; /* Add padding */
+}
+
+header {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Align items to the center */
+  background: rgba(0, 0, 0, 0.5); /* Set background with transparency */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Round the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+header h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 4rem; /* Increase font size */
+  letter-spacing: 2px; /* Add letter spacing */
+  font-family: "Alegreya", serif; /* Use the Alegreya font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  color: #ffffff; /* Set text color */
+  flex: 1; /* Allow h1 to take up remaining space */
+  text-align: center; /* Center-align text */
+  animation: pulse 2s infinite; /* Add a pulsing animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.weather-icon {
+  font-size: 7rem; /* Set the font size for the weather icon */
+}
+
+main {
+  margin-top: 20px; /* Add top margin */
+}
+
+form {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center-align items */
+  background: rgba(255, 255, 255, 0.1); /* Light background for form */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Round the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+form div {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Align items to the center */
+  margin-bottom: 10px; /* Add bottom margin */
+}
+
+form label {
+  margin-right: 10px; /* Add right margin */
+  width: 120px; /* Set a fixed width for the label */
+  text-align: right; /* Right-align the label text */
+}
+
+input[type="text"] {
+  padding: 10px; /* Increase padding */
+  border-radius: 5px; /* Round the corners */
+  border: none; /* Remove border */
+  width: 200px; /* Set a fixed width */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow for input */
+}
+
+button {
+  padding: 10px 20px; /* Add padding */
+  background-color: #4caf50; /* Set background color */
+  color: white; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Round the corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow for button */
+}
+
+button:hover {
+  background-color: #45a049; /* Change background color on hover */
+}
+
+.error-message {
+  color: #ff4d4d; /* Set text color to red */
+  margin-top: 10px; /* Add top margin */
+  font-weight: bold; /* Make error message bold */
+}
+
+.weather-container {
+  background: rgba(0, 0, 0, 0.5); /* Set background with transparency */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Round the corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  background-size: cover; /* Ensure background image covers the element */
+  background-position: center; /* Center the background image */
+  color: white; /* Ensure text is readable on images */
+  text-align: center; /* Center-align text */
+  animation: fadeIn 1s ease-in; /* Add slide-in animation */
+}
+
+.weather-container h2 {
+  margin: 0; /* Remove default margin */
+  font-size: 2rem; /* Increase font size */
+}
+
+.weather-container p {
+  margin: 10px 0; /* Add vertical margin */
+  font-size: 1.2rem; /* Increase font size */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center-align items horizontally */
+  align-items: center; /* Align items to the center */
+}
+
+.weather-container .condition {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items to the center */
+  font-size: 1.5rem; /* Increase font size */
+}
+
+.weather-container .condition-icon {
+  margin-right: 10px; /* Add right margin */
+  font-size: 2rem; /* Set font size */
+}
+
+footer {
+  margin-top: 20px; /* Add top margin */
+  font-size: 0.8em; /* Set font size */
+  color: rgba(255, 255, 255, 0.7); /* Set lighter text color */
+}
